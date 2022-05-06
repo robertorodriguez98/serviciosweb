@@ -9,3 +9,5 @@ if r.status_code==200:
     doc=r.json()
     for p in doc["projects"]:
         print(str(p["id"])+" "+p["name"])
+else:
+    print("se ha producido un error")
